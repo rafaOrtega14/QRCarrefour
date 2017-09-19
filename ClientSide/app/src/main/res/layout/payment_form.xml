@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#906B52">
+
+    <Button
+        android:text="Finish Register"
+        android:onClick="storeCard"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_height="50dp"
+        android:background="#B6DDE2"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#BA6073">
+
+    <TextView
+        android:text="Bank Data"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Expiration Month"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:id="@+id/ano"
+        android:textSize="24dp"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="27dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/mes"
+        android:layout_alignStart="@+id/mes" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Expiration year"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:id="@+id/mes"
+        android:layout_above="@+id/ano"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginBottom="27dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textColorHint="#ffffff"
+        android:hint="CreditCard number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/mes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="24dp"
+        android:textColorHint="#ffffff"
+        android:hint="CVC"
+        android:textColor="#ffffff"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/ano"
+        android:layout_alignLeft="@+id/ano"
+        android:layout_alignStart="@+id/ano"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

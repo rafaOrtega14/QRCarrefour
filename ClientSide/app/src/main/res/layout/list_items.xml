@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+    android:layout_width="325dp"
+        card_view:cardBackgroundColor="#B6DDE2"
+    android:layout_marginLeft="15dp"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/precio"
+            android:text="Price"
+            android:textColor="#3B303E"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/precioC"
+            android:textColor="#906B52"
+            android:textSize="24dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="125dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/calorias"
+            android:text="Calories"
+            android:textColor="#3B303E"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/caloriasC"
+            android:text="0"
+            android:textColor="#906B52"
+            android:textSize="24dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
